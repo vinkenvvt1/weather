@@ -11,7 +11,7 @@ img {width:36px;}
 </head>
 <body>
   <div class="container">
-  <a class="button" href="map.php">选择城市</a>
+  <a class="button" href="map.html">选择城市</a>
   <br>
 <?php date_default_timezone_set("Asia/Shanghai"); ?>
 <?php
