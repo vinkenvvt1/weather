@@ -17,17 +17,15 @@ img {width:36px;}
 <?php date_default_timezone_set("Asia/Shanghai"); ?>
 <?php
 if (isset($_GET["citycode"])) {$citycode = $_GET["citycode"];}
-else $citycode = "101190507";
+else $citycode = "101190501";
 $weather_data_raw = file_get_contents("http://t.weather.itboy.net/api/weather/city/".$citycode);
 $weather_data = json_decode($weather_data_raw, true);
 
-if (isset($weather_data["data"]))
-{
+if (isset($weather_data["data"])) {
 echo '<div class="small_deco">'.$weather_data["cityInfo"]["city"].'</div>';
 $count_forecast = count($weather_data["data"]["forecast"]);
 echo "<table>";
-for ($i=0;$i<$count_forecast;$i++)
-{
+for ($i=0;$i<$count_forecast;$i++) {
 echo "<tr><td>";
 echo date('m-d',time()+86400*$i);
 echo "</td><td>";
