@@ -11,8 +11,7 @@ img {width:36px;}
 </head>
 <body>
   <div class="container">
-  <a class="button" href="?citycode=101190507">启东</a>
-  <a class="button" href="?citycode=101010100">北京</a>
+  <a class="button" href="map.html">选择城市</a>
   <a class="button" style="float:right" href="citycode_all.json">城市代码</a>
   <br>
 <?php date_default_timezone_set("Asia/Shanghai"); ?>
