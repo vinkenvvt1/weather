@@ -41,6 +41,16 @@ if ($type == "多云"){echo '<img src="1f325.png">';}
 if ($type == "小雨"||$type == "中雨"||$type == "大雨"){echo '<img src="1f327.png">';}
 if ($type == "小雪"||$type == "中雪"||$type == "大雪"){echo '<img src="1f328.png">';}
 if ($type == "霾"){echo '<img src="2601.png">';}
+echo "</td><td>";
+$wind_fx = $weather_data["data"]["forecast"][$i]["fx"];
+if ($wind_fx == "北风"){echo '<img src="bei.png">';}
+if ($wind_fx == "东风"){echo '<img src="dong.png">';}
+if ($wind_fx == "南风"){echo '<img src="nan.png">';}
+if ($wind_fx == "西风"){echo '<img src="xi.png">';}
+if ($wind_fx == "东北风"){echo '<img src="dongbei.png">';}
+if ($wind_fx == "东南风"){echo '<img src="dongnan.png">';}
+if ($wind_fx == "西南风"){echo '<img src="xinan.png">';}
+if ($wind_fx == "西北风"){echo '<img src="xibei.png">';}
 echo "</td></tr>";
 }
 echo "</table>";
