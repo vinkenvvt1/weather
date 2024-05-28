@@ -10,9 +10,9 @@ img {width:36px;}
 </style>
 </head>
 <body>
-  <div class="container">
-  <a class="button" href="map.html">选择城市</a>
-  <br>
+<div class="container">
+<a class="button" href="map.html">选择城市</a>
+<br>
 <?php date_default_timezone_set("Asia/Shanghai"); ?>
 <?php
 if (isset($_GET["citycode"])) {$citycode = $_GET["citycode"];}
@@ -51,12 +51,20 @@ if ($wind_fx == "东北风"){echo '<img src="dongbei.png">';}
 if ($wind_fx == "东南风"){echo '<img src="dongnan.png">';}
 if ($wind_fx == "西南风"){echo '<img src="xinan.png">';}
 if ($wind_fx == "西北风"){echo '<img src="xibei.png">';}
+if ($wind_fx == "北东北风"){echo '<img src="dongbei.png">';}
+if ($wind_fx == "北西北风"){echo '<img src="xibei.png">';}
+if ($wind_fx == "东东北风"){echo '<img src="dongbei.png">';}
+if ($wind_fx == "东东南风"){echo '<img src="dongnan.png">';}
+if ($wind_fx == "南东南风"){echo '<img src="dongnan.png">';}
+if ($wind_fx == "南西南风"){echo '<img src="xinan.png">';}
+if ($wind_fx == "西西北风"){echo '<img src="xibei.png">';}
+if ($wind_fx == "西西南风"){echo '<img src="xinan.png">';}
 echo "</td></tr>";
 }
 echo "</table>";
 }
 else echo "citycode error";
 ?>
-  </div>
+</div>
 </body>
 </html>
